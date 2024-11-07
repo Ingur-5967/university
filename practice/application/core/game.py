@@ -47,8 +47,6 @@ class Game:
     def await_input(self):
         value = input('Введите символ или слово целиком: ')
 
-        print(self.word)
-
         accepted_symbol = {}
 
         if value == self.word:
