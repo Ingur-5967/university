@@ -13,7 +13,7 @@ difficult = await_value(lambda entry: str(entry).upper(), ['HARD', 'NORMAL', 'EA
 random_index = randrange(1, len(word_file.read()))
 
 game_instance = Game(
-    Player(record), Difficult[difficult.upper()], word_file.read_index(random_index),
+    Player(record), Difficult[difficult], word_file.read_index(random_index),
     len(word_file.read_index(random_index)), log_file
 )
 
