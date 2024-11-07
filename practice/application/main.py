@@ -8,7 +8,6 @@ log_file = File(ConstantValues.LOG_PATH)
 
 record = (-1 if log_file.read_entry("Last record:") == "Not found" else log_file.read_entry("Last record:").split(":")[1])
 
-passed = False
 difficult = await_value(lambda entry: str(entry).upper(), ['HARD', 'NORMAL', 'EASY'])
 
 random_index = randrange(1, len(word_file.read()))
