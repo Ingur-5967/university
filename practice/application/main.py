@@ -17,7 +17,7 @@ game_instance = Game(
     len(word_file.read_index(random_index)), log_file
 )
 
-game_instance.get_render_tool().render(None)
+game_instance.get_render_tool().render()
 
 while not game_instance.is_finished():
     game_instance.await_input()
