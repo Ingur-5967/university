@@ -158,9 +158,9 @@ class Feature:
             for file in files:
                 os.remove(self.path + fr'\{file}')
                 print(f"Removed {file}")
-
+                
         def delete_contains_substring(substring: str):
-            files = self.file_manager.get_path_files_with_substring(self.path, substring)
+            files = self.file_manager.get_path_files_contains_substring(self.path, substring)
             for file in files:
                 os.remove(self.path + fr'\{file}')
                 print(f"Removed {file}")
